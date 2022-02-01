@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context="UI.EditAddAssessmentActivity">
+
+
+            <TextView
+                android:id="@+id/AssessmentsLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Assessment"
+                android:textSize="19pt"
+                android:textStyle="bold"
+                android:paddingBottom="40dp"/>
+
+            <EditText
+                android:id="@+id/AssessmentTitleEditText"
+                android:layout_width="250dp"
+                android:layout_height="48dp"
+                android:layout_margin="5dp"
+                android:hint="Assessment title" />
+
+            <EditText
+                android:id="@+id/AssessmentStartDateEditText"
+                android:layout_width="180dp"
+                android:layout_height="48dp"
+                android:layout_margin="5dp"
+                android:hint="Start date: mm/dd/yy" />
+
+            <EditText
+                android:id="@+id/AssessmentEndDateEditText"
+                android:layout_width="180dp"
+                android:layout_height="48dp"
+                android:layout_margin="5dp"
+                android:hint="End date: mm/dd/yy" />
+
+            <EditText
+                android:id="@+id/AssessmentTypeEditText"
+                android:layout_width="370dp"
+                android:layout_height="48dp"
+                android:hint="Assessment type" />
+
+            <Button
+                android:id="@+id/saveButton"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="160dp"
+                android:layout_marginEnd="157dp"
+                android:onClick="saveAssessment"
+                android:text="Save" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

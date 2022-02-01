@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SchedulerMobileApp</string>
+
+    <string name="channel_name">channelname</string>
+    <string name="channel_description">channel description</string>
+    <string name="courses_this_term">Courses This Term</string>
+    <string name="start">Start</string>
+    <string name="save">Save</string>
+</resources>
